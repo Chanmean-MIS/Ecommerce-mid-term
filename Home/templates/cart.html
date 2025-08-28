@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+{% block contain %}
+    <link rel="stylesheet" href="{% static 'style/cart.css' %}">
+<h2>Cart</h2>
+<section id="cart-container">
+    <table id="cart-table">
+      <thead>
+        <tr>
+          <th>Select</th>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- Cart items will be injected here -->
+      </tbody>
+    </table>
+
+
+  <div id="cart-summary">
+    <p>Total Items: <span id="total-items">0</span></p>
+    <p>Subtotal: $<span id="subtotal">0.00</span></p>
+    <p>Tax (10%): $<span id="tax">0.00</span></p>
+    <p><strong>Total: $<span id="total">0.00</span></strong></p>
+
+    <div class="cart-buttons">
+      <a href="{% url 'shop' %}" class="btn back-shop">← Back to Shop</a>
+      <a href="{% url 'checkout' %}" class="btn checkout">Proceed to Checkout</a>
+    </div>
+  </div>
+</section>
+
+<script src="{% static 'js/cart.js' %}"></script>
+
+{% endblock %}

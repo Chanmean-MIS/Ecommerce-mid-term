@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+{% block contain %}
+    <div class="slider-image">
+    <img src="https://slimages.macysassets.com/is/image/MacysInc/C2500515_103_imagemap?resMode=sharp2&qlt=85,0&fmt=webp&wid=2880" alt="Product" />
+  </div>
+<section class="categories">
+    <h3>Categories of The Month</h3>
+    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="category-cards">
+      <div class="card">
+        <img src="https://zandokh.com/image/cache/catalog/products/2025-04/12225031163/11042025afternoon14176-cr-450x672.jpg" alt="Watches" />
+        <h4>clothes</h4>
+        <a href="{% url 'shop' %}"><button>Go Shop</button></a>
+      </div>
+      <div class="card">
+        <img src="https://zandokh.com/image/cache/catalog/products/2025-01/5162408039/IMG_0172-cr-450x672.jpg" alt="Shoes" />
+        <h4>Shoes</h4>
+        <a href="{% url 'shop' %}"><button>Go Shop</button></a>
+      </div>
+      <div class="card">
+        <img src="https://zandokh.com/image/cache/catalog/products/2024-05/4122312168/Cap%20(5)-cr-450x672.jpg" alt="Accessories" />
+        <h4>Cap</h4>
+        <a href="{% url 'shop' %}"><button>Go Shop</button></a>
+      </div>
+    </div>
+  </section>
+{% endblock %}

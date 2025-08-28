@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% load static %}
+{% block contain %}
+  <main class="main-container">
+    <aside class="sidebar">
+      <h3>Categories</h3>
+      <ul>
+        <li><input type="radio" checked> All Products</li>
+        <li><input type="radio"> Dresses</li>
+        <li><input type="radio"> Tops</li>
+        <li><input type="radio"> Skirts</li>
+        <li><input type="radio"> Accessories</li>
+      </ul>
+
+      <h3>Color</h3>
+      <label><input type="checkbox"> Red</label>
+      <label><input type="checkbox"> Black</label>
+      <label><input type="checkbox"> White</label>
+    </aside>
+
+    <section class="products">
+      <div class="product" data-id="1" data-price="25.86">
+        <img src="https://zandokh.com/image/catalog/products/2025-07/4222503074/10S25POLW004_Gray-(1).jpg">
+        <p class="name">Regular Polo Shirts Zipped</p>
+        <p class="price">$25.86</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product" data-id="2" data-price="30.96">
+        <img src="https://zandokh.com/image/catalog/products/2025-07/4222503075/10S25PCAW010_Purple%20(1).jpg" >
+        <p class="name">Straight Fitted Cargo Trousers</p>
+        <p class="price">$30.96</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product" data-id="3" data-price="30.36">
+        <img src="https://zandokh.com/image/catalog/products/2025-07/5262501030/SHOES0244.jpg">
+        <p class="name">Running Sneakers</p>
+        <p class="price">$30.36</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product" data-id="4" data-price="15.96">
+        <img src="https://zandokh.com/image/catalog/products/2025-06/4222503076/10S25SHLW008_Black%20(1).jpg" >
+        <p class="name">Cropped Fit Shirts</p>
+        <p class="price">$15.96</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product" data-id="5" data-price="19.96">
+        <img src="https://zandokh.com/image/catalog/products/2025-06/4222503090/10F24SHSW011_Natural%20(1).jpg" >
+        <p class="name">Cropped Shirts</p>
+        <p class="price"> $19.96</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product" data-id="6" data-price="14.09">
+        <img src="https://zandokh.com/image/catalog/products/2025-06/5252506023/ZANDO200620258348.jpg">
+        <p class="name">Casual Sneaker</p>
+        <p class="price">$14.09</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product" data-id="7" data-price="20.76">
+        <img src="https://zandokh.com/image/catalog/products/2025-06/4222501088/10F24DPAW009_M-INDIGO-quan-dai-jean-nu-(1).jpg" >
+        <p class="name">Beggy Denim Jeans</p>
+        <p class="price">$20.76</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product" data-id="8" data-price="8.76">
+          <img src="https://zandokh.com/image/catalog/products/2025-06/5582411043/ZANDO09.06.20253917.jpg">
+          <p class="name">Visor Cap</p>
+          <p class="price">$8.76</p>
+          <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product" data-id="9" data-price="23.95">
+          <img src="https://zandokh.com/image/catalog/products/2025-05/21225031141/05.jpg">
+          <p class="name">Regular Cargo Trouser</p>
+          <p class="price">$23.95</p>
+          <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+        <div class="product" data-id="10" data-price="20.59">
+          <img src="https://zandokh.com/image/catalog/products/2025-04/5152411099/ZANDO280320259806.jpg">
+          <p class="name">AG-Slipper</p>
+          <p class="price">$20.59</p>
+          <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+        <div class="product" data-id="11" data-price="35.59">
+          <img src="https://zandokh.com/image/catalog/products/2025-08/5252501015/ZANDO070820253688.jpg">
+          <p class="name">Skateboarding Sneakers</p>
+          <p class="price">$35.59</p>
+          <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+        <div class="product" data-id="12" data-price="8.59">
+          <img src="https://zandokh.com/image/catalog/products/2024-10/4522408020/Hat-With-Embroidery%20(7).jpg">
+          <p class="name">Hat With Embroidery</p>
+          <p class="price">$8.59</p>
+          <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+{% endblock %}

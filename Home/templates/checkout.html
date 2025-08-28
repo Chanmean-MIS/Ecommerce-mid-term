@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block contain %}
+    <link rel="stylesheet" href="{% static 'style/checkout.css' %}">
+<h2>Checkout</h2>
+<section id="checkout-container">
+  <table id="checkout-table">
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+      </tr>
+    </thead>
+    <tbody id="checkout-items">
+      <!-- Selected products will be injected here -->
+    </tbody>
+  </table>
+
+  <div id="checkout-summary">
+    <p>Subtotal: $<span id="subtotal">0.00</span></p>
+    <p>Tax (10%): $<span id="tax">0.00</span></p>
+    <p><strong>Total: $<span id="total">0.00</span></strong></p>
+
+    <div class="checkout-buttons">
+      <a href="{% url 'cart' %}" class="btn back-shop">← Back to Cart</a>
+      <button id="confirm-order" class="btn checkout">Confirm Order</button>
+    </div>
+  </div>
+</section>
+
+<script src="{% static 'js/checkout.js' %}"></script>
+
+{% endblock %}

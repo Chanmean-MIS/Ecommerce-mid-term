@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+{% block contain %}
+    <link rel="stylesheet" href="{% static 'style/about.css' %}">
+    <h2 style="padding-top: 20px;
+    padding-left: 30px;
+    color: #218838;
+    text-align: center;
+    padding-bottom: 20px;">About</h2>
+    <!-- Our Story Section -->
+    `<section class="our-story">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2>Our Story</h2>
+                    <p>
+                        Founded in 2020, Fashion Store started with a vision to make fashion accessible and stylish for everyone.
+                        We combine the latest trends with quality fabrics to create outfits that make you feel confident and unique.
+                        Our team is passionate about fashion, sustainability, and creating a community where everyone can express themselves through style.
+                        Our mission is to deliver high-quality fashion products while inspiring confidence and creativity in every customer.
+                        Our vision is to be a leading fashion brand recognized for style, innovation, and sustainability worldwide.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h4>Chhoeurng Sreynith</h4>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <h4>Kong Sokunlyza</h4>
+                    <p>Head Designer</p>
+                </div>
+                <div class="team-member">
+                    <h4>Kruy Rina</h4>
+                    <p>Marketing Lead</p>
+                </div>
+                <div class="team-member">
+                    <h4>Pech Chanmean</h4>
+                    <p>Operations Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Discover Our Collection</h2>
+            <a href="{% url 'shop' %}" class="btn shop-btn">Shop Now</a>
+        </div>
+    </section>`
+{% endblock %}

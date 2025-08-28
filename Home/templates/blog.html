@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+{% block contain %}
+    <link rel="stylesheet" href="{% static 'style/blog.css' %}">
+    <h2>Blog</h2>
+    <section class="blog-hero">
+        <div class="container">
+            <p>Stay updated with the latest trends, tips, and tutorials in fashion.</p>
+        </div>
+    </section>
+  <!-- Blog Content -->
+<section class="blog-content">
+    <div class="container">
+        <h2>Video Tutorials & Tips</h2>
+        <div class="video-grid">
+            <!-- Video 1 -->
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/VORQovHlZxc" title="Top 10 Fall 2025 Fashion Trends" frameborder="0" allowfullscreen></iframe>
+                <h3>Top 10 Fall 2025 Fashion Trends</h3>
+                <p>Discover the top 10 fashion trends for Fall 2025, including vibrant colors, textures, and must-have accessories.</p>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/m1T1RxAexAE" title="How to Effortlessly Improve Your Style" frameborder="0" allowfullscreen></iframe>
+                <h3>How to Effortlessly Improve Your Style</h3>
+                <p>Learn simple tips to elevate your daily style and create outfits that impress without breaking the bank.</p>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/FD78efvz_lU" title="Top 10 Autumn/Winter Fashion Trends 2025" frameborder="0" allowfullscreen></iframe>
+                <h3>Top 10 Autumn/Winter Fashion Trends 2025</h3>
+                <p>Explore key autumn and winter fashion trends for 2025, including must-have clothing items and layering techniques.</p>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/3wK0CJ1C5u4" title="Casual Outfit Ideas" frameborder="0" allowfullscreen></iframe>
+                <h3>Casual Outfit Ideas</h3>
+                <p>Check out casual outfit inspirations for everyday wear that keep you stylish and comfortable.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
