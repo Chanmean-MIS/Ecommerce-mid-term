@@ -1,0 +1,128 @@
+h2{
+    padding-top: 20px;
+    padding-left: 30px;
+    color: #218838;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#cart-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#cart-table th, #cart-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+#cart-table img {
+  border-radius: 5px;
+}
+
+#cart-summary {
+  text-align: right;
+  margin-top: 20px;
+}
+
+#cart-summary p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.cart-buttons {
+  margin-top: 15px;
+}
+
+.cart-buttons button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+#checkout {
+  background-color: #28a745;
+  color: #fff;
+}
+
+#checkout:hover {
+  background-color: #218838;
+}
+
+#back-shop {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#back-shop:hover {
+  background-color: #0056b3;
+}
+
+button.qty-plus, button.qty-minus, button.remove {
+  padding: 4px 8px;
+  margin: 0 2px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+button.qty-plus, button.qty-minus {
+  background-color: #007bff;
+  color: #fff;
+}
+
+button.qty-plus:hover, button.qty-minus:hover {
+  background-color: #0056b3;
+}
+
+button.remove {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+button.remove:hover {
+  background-color: #c82333;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+/* Back to Shop button (gray) */
+.back-shop {
+  background-color: #9ea2a4; /* gray */
+  color: #fff;
+}
+
+.back-shop:hover {
+  background-color: #5a6268; /* darker gray on hover */
+}
+
+/* Proceed to Checkout button (green) */
+.checkout {
+  background-color: #28a745; /* green */
+  color: #fff;
+}
+
+.checkout:hover {
+  background-color: #218838; /* darker green on hover */
+}
+
+
